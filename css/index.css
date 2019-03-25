@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5 {
     margin-right: 65px;
     font-size: 15px;
     color: gray;
-    text-decoration: underline;
+    text-decoration: none;
 }
   
   header nav a:hover {
@@ -198,11 +198,46 @@ h1, h2, h3, h4, h5 {
 		/* margin: auto; */
 		display: inline-flex;
 		justify-content: flex-end; 
-	}
+    }
+    
 @media(max-width: 800px) {
+    
+    .container {
+       justify-content: center;
+        width: 100%;
+    }
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .logo {
+        order: -1;
+        margin: auto;
+        align-items: center;
+        margin-bottom: 20px;
 
+    }
+    .cta img {
+        display: none;
+    }
+    .cta-text {
+        justify-content: center;
+    }
+    
 }
 
 @media(max-width: 500px) {
-    
+    .container {
+        
+        justify-content: center;
+        width: 100%;
+     }
+
+     header nav {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+
 }
